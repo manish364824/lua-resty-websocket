@@ -5,6 +5,10 @@ os: linux
 
 language: c
 
+arch:
+ - amd64
+ - ppc64le
+
 compiler:
   - gcc
   - clang
@@ -38,9 +42,7 @@ env:
     
   matrix:
     - NGINX_VERSION=1.9.15
-    - arch: ppc64le 
     - NGINX_VERSION=1.19.3
-    - arch: ppc64le 
      
 
 install:
